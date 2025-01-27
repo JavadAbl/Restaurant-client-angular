@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { RestaurantCardComponent } from './restaurantCards/restaurantCard.component';
+import { IndexComponent } from './pages/index/index.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, RestaurantCardComponent],
+  imports: [IndexComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
