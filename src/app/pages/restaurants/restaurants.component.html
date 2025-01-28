@@ -1,38 +1,15 @@
 <div class="base">
   <div class="container">
-    <app-restaurantCard [restaurant]="data"></app-restaurantCard>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Card Image" />
-      <div class="card-content">
-        <h2 class="card-title">Card Title 1</h2>
-        <p class="card-description">
-          This is a brief description of the first card item.
-        </p>
-        <a href="#" class="card-button">Learn More</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Card Image" />
-      <div class="card-content">
-        <h2 class="card-title">Card Title 2</h2>
-        <p class="card-description">
-          This is a brief description of the second card item.
-        </p>
-        <a href="#" class="card-button">Learn More</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Card Image" />
-      <div class="card-content">
-        <h2 class="card-title">Card Title 3</h2>
-        <p class="card-description">
-          This is a brief description of the third card item.
-        </p>
-        <a href="#" class="card-button">Learn More</a>
-      </div>
-    </div>
+    @for (item of restaurants; track $index) {
+    <app-restaurantCard
+      [restaurant]="item"
+      (click)="handleItemClick(item)"
+    ></app-restaurantCard>
+    }
   </div>
+
+  <app-restaurant-dishes
+    class=""
+    [restaurant]="selectedRestaurant()"
+  ></app-restaurant-dishes>
 </div>
