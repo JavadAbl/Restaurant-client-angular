@@ -3,8 +3,8 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: row;
-  background-color: black;
   height: 90vh;
+  background-color: snow;
 }
 
 .container {
@@ -15,11 +15,15 @@
   overflow-y: auto;
   align-self: stretch;
   direction: rtl;
-  background-color: blue;
 }
 
 .container > * {
   direction: ltr;
+}
+
+.dishesContainer {
+  flex: 1;
+  margin-top: 30px;
 }
 
 .card {
