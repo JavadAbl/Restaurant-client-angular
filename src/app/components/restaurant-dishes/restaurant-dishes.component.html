@@ -17,6 +17,9 @@
 
 <div>
   @if (isShowOrder()) {
-  <app-restaurant-add-order></app-restaurant-add-order>
+  <app-restaurant-add-order
+    [isShow]="true"
+    (onExit)="isShowOrder.set($event)"
+  ></app-restaurant-add-order>
   }
 </div>

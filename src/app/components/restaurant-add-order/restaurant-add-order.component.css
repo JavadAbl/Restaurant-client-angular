@@ -1,0 +1,75 @@
+/* General styles for the overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it displays above other content */
+}
+
+/* Styles for the dialog container */
+.dialogContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px; /* Set a maximum width for the dialog */
+  width: 90%; /* Make it responsive */
+  padding: 20px; /* Add some internal spacing */
+  transition: opacity 0.3s ease; /* Smooth transition for opening/closing */
+}
+
+/* Styles for form elements */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.1rem; /* Slightly larger font for labels */
+}
+
+.inputText {
+  padding: 10px; /* Internal padding for inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 15px; /* Space between inputs */
+  font-size: 1rem; /* Consistent font size */
+}
+
+/* Styles for buttons */
+.okBtn {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 10px 15px; /* Internal padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Consistent font size */
+  margin-right: 10px; /* Space between buttons */
+}
+
+.cancelBtn {
+  background-color: #f44336; /* Red background */
+  color: white; /* White text */
+  padding: 10px 15px; /* Internal padding */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Consistent font size */
+}
+
+/* Button hover effects */
+.okBtn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.cancelBtn:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
