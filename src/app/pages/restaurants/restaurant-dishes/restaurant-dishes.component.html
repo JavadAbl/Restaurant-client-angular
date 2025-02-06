@@ -6,11 +6,14 @@
         restaurant()?.name ?? "Please Select a resraurant to view their dishes"
       }}
     </h2>
+
     <p class="card-description">
       {{ restaurant()?.des }}
     </p>
-    <button href="#" class="card-button" (click)="handleShowOrder()">
-      Order
+
+    <button app-btn href="#" class="card-button" (click)="handleShowOrder()">
+      s
+      <span ngProjectAs="icon">dsa</span>
     </button>
   </div>
 </div>

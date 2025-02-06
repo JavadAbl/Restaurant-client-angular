@@ -1,5 +1,5 @@
 import { Component, input, signal } from '@angular/core';
-import { IRestaurant } from '../../models/restaurant';
+import { IRestaurant } from '../../../models/restaurant';
 import { RestaurantAddOrderComponent } from '../restaurant-add-order/restaurant-add-order.component';
 
 @Component({

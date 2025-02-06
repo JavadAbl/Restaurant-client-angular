@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
-import { RestaurantCardComponent } from '../../components/restaurantCards/restaurantCard.component';
-import { RestaurantDishesComponent } from '../../components/restaurant-dishes/restaurant-dishes.component';
+import { RestaurantCardComponent } from './restaurantCards/restaurantCard.component';
+import { RestaurantDishesComponent } from './restaurant-dishes/restaurant-dishes.component';
 import { IRestaurant } from '../../models/restaurant';
 const data = [{ name: 'name1' }, { name: 'name2' }, { name: 'name3' }];
 
